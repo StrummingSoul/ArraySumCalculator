@@ -1,0 +1,12 @@
+    System.out.println("Сумма элементов массива: " + sum);
+    }
+
+    public static int calculateArraySum(int[][] array) {
+        int sum = 0;
+        for (int[] row : array) {
+            for (int element : row) {
+                sum += element;
+            }
+        }
+        return sum;
+    }
